@@ -12,21 +12,50 @@
 <body>
     
 
-    <div class="container bg-gray-100">
+    <div class="container bg-gray-100 mx-auto">
 
-        <header class="">
-            <h2>This is Ninja Protect</h2>
-            <h4>How to protect your wepage, paranoid mode</h4>
+        <header class="mx-auto bg-red-100 p-8 text-center">
+            <h2 class="text-4xl">This is Ninja Protect</h2>
+            <h4 class="text-2xl">simple library to protect your wepage, paranoid mode</h4>
         </header>
     
-        <main>
+        <main class="font-serif">
             
-            <h2>available list</h2>
 
-            <ol role="list">
-                <li>Disable Right Click</li>
 
-            </ol>
+            <div class="flex my-8 px-8 mx-auto">
+                <img class="w-80 box-border ml-2 border-4 border-blue-500 p-2" src="https://source.unsplash.com/random" alt="random images to be tested">
+
+                <div class="content-wraper text-l p-4 mx-4">
+                    <p class="">Hi this is an example of paragraph. You may try to copy this text, or right click and save the image. </p>
+                    
+                    <p>here items are can't be done </p>
+                    <br>
+                
+                    <ul role="list" class="list-decimal">
+                        <li>(Mouse) Disable Right Click</li>
+                        <li>(Mouse) Disable Select Text & Image</li>
+                        <li>(Mouse) Disable Drage element</li>
+
+                        <li>(Shortcut) Disable Ctrl-A (Select All)</li>
+                        <li>(Shortcut) Disable Ctrl-C (Copy)</li>
+                        <li>(Shortcut) Disable Ctrl-X (Cut)</li>
+                        <li>(Shortcut) Disable Ctrl-U (View Source)</li>
+                        <li>(Shortcut) Disable Ctrl-P (Print)</li>
+                        <li>(Shortcut) Disable Ctrl-S (Save As Page)</li>
+                        <li>(Shortcut) Disable Ctrl-Shift-i (Inspect Element)</li>
+                        <li>(Shortcut) Disable F12 (Developer Mode)</li>
+                    </ul>
+
+
+                    <p>
+                    The right click is disabled. Try link below. 
+                    <a href="https://ninjaqr.com" title="Online QR Code Scanner and Generator" class="text-blue-500">Ninja QR Code Scanner and Generator</a>.
+                    However, if you want to enable only on right click, please remove commented code in protectRightClick() function. 
+                    </p>
+                </div>
+                
+            </div>
     
             
         </main>
@@ -41,10 +70,6 @@
 
         var myfort = new NinjaProtect();
         myfort.protectAll();
-
-        // console.log("saya dipangggil kok");
-
-   
 
     </script>
 </body>
